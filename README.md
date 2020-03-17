@@ -1,5 +1,6 @@
-#Otsikko1
-##Otsikko2
+# Ohjelmistotekniikka, harjoitustyö
+## Tehtävät
+### Viikko 1
 
 Ihan vain tavallista tekstiä.
 
@@ -11,3 +12,10 @@ _**Lihavoitua ja kursivoitua tekstiä.**_
 
 Taas vain tavallista tekstiä.
 Seuraava rivi ilman tyhjää riviä välissä.
+Nähtävästi pelkkä rivinvaihto lisää vain välilyönnin.
+
+Seuraavaksi linkit tehtäviin:
+
+[gitlog.txt](https://github.com/mkkarl/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+
+[komentorivi.txt](https://github.com/mkkarl/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
