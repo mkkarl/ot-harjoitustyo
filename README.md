@@ -19,3 +19,5 @@ Seuraavaksi linkit tehtäviin:
 [gitlog.txt](https://github.com/mkkarl/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
 [komentorivi.txt](https://github.com/mkkarl/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+
+Lisätään vielä yksi rivi, jotta tehtävä saadaan tehtyä.
