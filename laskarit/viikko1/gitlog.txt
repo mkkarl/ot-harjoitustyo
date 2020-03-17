@@ -1,3 +1,5 @@
+Tämä rivi on lisätty epäsynkronointia varten.
+
 mari@mari-lenovo:~/Asiakirjat/HY/Kurssimateliaalit/TKT/Ohte/ot_viikko1$ git log --stat | cat
 commit 05848b7706ef8d8b428a282f2020200d44cf54bc
 Author: Mari Karlsson <59450590+mkkarl@users.noreply.github.com>
