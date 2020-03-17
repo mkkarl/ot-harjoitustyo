@@ -1,0 +1,115 @@
+mari@mari-lenovo:~/Asiakirjat/HY/Kurssimateliaalit/TKT/Ohte/ot_viikko1$ git log --stat | cat
+commit 05848b7706ef8d8b428a282f2020200d44cf54bc
+Author: Mari Karlsson <59450590+mkkarl@users.noreply.github.com>
+Date:   Tue Mar 17 00:14:38 2020 +0200
+
+    muutosta ja perrutusta
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit b9efe7b939002dc7e4f237330e6d9051ae18c0ff
+Author: Mari Karlsson <59450590+mkkarl@users.noreply.github.com>
+Date:   Tue Mar 17 00:09:23 2020 +0200
+
+    uusia juttuja
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 1fd76fe30fffc2a532ae7a9033570f591d333be2
+Author: Mari Karlsson <59450590+mkkarl@users.noreply.github.com>
+Date:   Mon Mar 16 23:55:27 2020 +0200
+
+    patch
+
+ eka.txt    | 2 +-
+ kolmas.txt | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit d584aa036ee1db4a36e91f2fe55f2bce6168ecaf
+Author: Mari Karlsson <59450590+mkkarl@users.noreply.github.com>
+Date:   Mon Mar 16 23:49:29 2020 +0200
+
+    nimimuutos
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit b55374af4f29a45b4b3ceeda89311406077c2e69
+Author: Mari Karlsson <59450590+mkkarl@users.noreply.github.com>
+Date:   Mon Mar 16 23:48:26 2020 +0200
+
+    poisto
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit ac498958aa720f3783b2515a429f5f86ff0ed6cb
+Author: Mari Karlsson <59450590+mkkarl@users.noreply.github.com>
+Date:   Mon Mar 16 23:44:22 2020 +0200
+
+    tehty muutoksia sisältöön
+
+ tiedosto.txt | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit c8d15e8cdbc69ce8b12f48e5ba4c489d33807148
+Author: Mari Karlsson <59450590+mkkarl@users.noreply.github.com>
+Date:   Mon Mar 16 23:41:13 2020 +0200
+
+    lisätty paljon tekstiä
+
+ tiedosto.txt | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit 6a598465f507557ec145cbb80fe6a1d943e16bb4
+Author: Mari Karlsson <59450590+mkkarl@users.noreply.github.com>
+Date:   Mon Mar 16 23:24:37 2020 +0200
+
+    uusi kansio ja joku tiedosto
+
+ stuff/joku_tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 09cbac76af30e22b3abd9cb6aa743d22914c5675
+Author: Mari Karlsson <59450590+mkkarl@users.noreply.github.com>
+Date:   Mon Mar 16 23:21:08 2020 +0200
+
+    tehty muutoksia
+
+ kolmas.txt | 2 ++
+ toinen.txt | 1 +
+ 2 files changed, 3 insertions(+)
+
+commit b4dd6c0f1c284011f088c4293c5a1ea1a6f4264f
+Author: Mari Karlsson <59450590+mkkarl@users.noreply.github.com>
+Date:   Mon Mar 16 23:19:42 2020 +0200
+
+    kolmas.txt lisätty
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit a13a2c1281d93cf0421257f68a8448d930e76686
+Author: Mari Karlsson <59450590+mkkarl@users.noreply.github.com>
+Date:   Mon Mar 16 23:11:35 2020 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 32fe43f8f73cb953fbdc38fb59bdcce0f9eb2a16
+Author: Mari Karlsson <59450590+mkkarl@users.noreply.github.com>
+Date:   Mon Mar 16 23:06:27 2020 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
