@@ -21,3 +21,5 @@ Seuraavaksi linkit tehtäviin:
 [komentorivi.txt](https://github.com/mkkarl/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
 Lisätään vielä yksi rivi, jotta tehtävä saadaan tehtyä.
+
+Vielä yksi muutos, epäsynkronoidaan.
