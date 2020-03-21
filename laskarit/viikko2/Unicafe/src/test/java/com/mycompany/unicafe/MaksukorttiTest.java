@@ -51,4 +51,9 @@ public class MaksukorttiTest {
     public void ottaessaPalauttaaFalseJosRahaaEiTarpeeksi() {
         assertFalse(kortti.otaRahaa(20));
     }
+    
+    @Test
+    public void saldoPalautuuOikein() {
+        assertEquals(10, kortti.saldo());
+    }
 }
