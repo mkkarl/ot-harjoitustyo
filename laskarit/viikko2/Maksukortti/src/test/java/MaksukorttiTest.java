@@ -12,32 +12,14 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MaksukorttiTest {
-    
+
     Maksukortti kortti;
-
-    public MaksukorttiTest() {
-    }
-
-    @BeforeClass
-    public static void setUpClass() {
-    }
-
-    @AfterClass
-    public static void tearDownClass() {
-    }
 
     @Before
     public void setUp() {
         kortti = new Maksukortti(10);
     }
 
-    @After
-    public void tearDown() {
-    }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
     @Test
     public void hello() {
     }
@@ -72,12 +54,12 @@ public class MaksukorttiTest {
 
         assertEquals("Kortilla on rahaa 2.0 euroa", kortti.toString());
     }
-    
+
     public void kortilleVoiLadataRahaa() {
         kortti.lataaRahaa(25);
         assertEquals("Kortilla on rahaa 35.0 euroa", kortti.toString());
     }
-    
+
     public void kortinSaldoEiYlitaMaksimiarvoa() {
         kortti.lataaRahaa(200);
         assertEquals("Kortilla on rahaa 150.0 euroa", kortti.toString());
