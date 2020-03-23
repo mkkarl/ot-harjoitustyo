@@ -30,8 +30,8 @@ Viikon 2 laskarit löytyvät [täältä](https://github.com/mkkarl/ot-harjoitust
 
 ## Sukupuu-sovellus
 
-Harjoitustyön repositorio
+[Harjoitustyön kansio](https://github.com/mkkarl/ot-harjoitustyo/tree/master/Sukupuu)
 
 ### Viikko 2
 
-Vaativuusmäärittely
+[Vaativuusmäärittely](https://github.com/mkkarl/ot-harjoitustyo/tree/master/Sukupuu)

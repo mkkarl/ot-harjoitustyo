@@ -2,4 +2,4 @@
 
 päivä | aika | mitä tein
 ------|------|-----------
-23.3. |  | vaatmiusmäärittely
+23.3. | 1 | vaatmiusmäärittely
