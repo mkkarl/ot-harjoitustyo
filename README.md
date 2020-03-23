@@ -23,3 +23,15 @@ Seuraavaksi linkit tehtäviin:
 Lisätään vielä yksi rivi, jotta tehtävä saadaan tehtyä.
 
 Vielä yksi muutos, epäsynkronoidaan.
+
+### Viikko 2
+
+Viikon 2 laskarit löytyvät [täältä](https://github.com/mkkarl/ot-harjoitustyo/tree/master/laskarit/viikko2).
+
+## Sukupuu-sovellus
+
+Harjoitustyön repositorio
+
+### Viikko 2
+
+Vaativuusmäärittely
