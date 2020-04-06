@@ -17,11 +17,11 @@ public class PersonDao implements Dao<Person, Integer> {
 
     @Override
     public void create(Person person) throws SQLException {
-        Connection connection = DriverManager.getConnection("jdbc:sqlite:./tietokanta","sa", "");
+        Connection connection = DriverManager.getConnection("jdbc:sqlite:./tietokanta", "sa", "");
         
         PreparedStatement stmt = connection.prepareStatement("INSERT INTO Person"
-        + " (firstname, lastname, dob, dod, pob, pod)"
-        + " VALUES (?, ?, ?, ?, ?, ?)");
+            + " (firstname, lastname, dob, dod, pob, pod)"
+            + " VALUES (?, ?, ?, ?, ?, ?)");
         stmt.setString(1, person.getFirstName());
         stmt.setString(2, person.getLastName());
         stmt.setDate(3, person.getDateOfBirth());
