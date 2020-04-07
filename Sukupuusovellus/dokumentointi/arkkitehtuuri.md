@@ -1,0 +1,15 @@
+# Arkkitehtuurikuvaus
+
+## Rakenne
+
+Pakkauskaavio
+
+<img scr="https://github.com/mkkarl/ot-harjoitustyo/blob/master/Sukupuusovellus/dokumentointi/kuvat/IMG_20200407_231212.jpg" width="300">
+
+Luokat
+
+<img src="https://github.com/mkkarl/ot-harjoitustyo/blob/master/Sukupuusovellus/dokumentointi/kuvat/IMG_20200407_231223.jpg" width="300"A>
+
+Hahmotelmia käyttöliittymästä
+
+<img src="https://github.com/mkkarl/ot-harjoitustyo/blob/master/Sukupuusovellus/dokumentointi/kuvat/IMG_20200407_231140.jpg" width="300">
