@@ -2,9 +2,7 @@
 
 Sukupuusovelluksen avulla käyttäjä voi hallita sukututkimuksessa kerättäviä tietoja.
 
-[Harjoitustyön kansio](https://github.com/mkkarl/ot-harjoitustyo/tree/master/Sukupuu)
-
-##Dokumentaatio
+## Dokumentaatio
 
 [Vaatimusmäärittely](https://github.com/mkkarl/ot-harjoitustyo/blob/master/Sukupuusovellus/dokumentointi/vaatimusmaarittely.md)
 
