@@ -19,7 +19,7 @@ public class NewFamilyTreeGUI {
         
         VBox layout = new VBox();
         
-        Label coming = new Label("Uuden sukupuun luonti tulossa...");
+        Label coming = new Label("Uuden sukupuun istutus tulossa...");
         
         layout.getChildren().add(coming);
         

@@ -5,6 +5,7 @@
  */
 package sukupuusovellus;
 
+import java.io.File;
 import javafx.application.Application;
 import sukupuusovellus.ui.GraphicalUI;
 
@@ -13,6 +14,8 @@ import sukupuusovellus.ui.GraphicalUI;
  * @author mari
  */
 public class Sukupuusovellus {
+    
+//    public File file;
     
     public static void main(String[] args) {
         Application.launch(GraphicalUI.class);
