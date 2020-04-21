@@ -15,6 +15,8 @@ public class FileManagement {
     private File file;
     
     public void openFile(File file) {
+        // tähän voisi tehdä tiedostotyypin tarkistuksen
+        
         this.file = file;
     }
     
@@ -23,5 +25,12 @@ public class FileManagement {
             return "";
         }
         return this.file.getName();
+    }
+    
+    public String getFilePath() {
+        if (file == null) {
+            return "";
+        }
+        return this.file.getPath();
     }
 }

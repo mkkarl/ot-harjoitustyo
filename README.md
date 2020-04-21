@@ -8,4 +8,4 @@ Sukupuusovelluksen avulla käyttäjä voi hallita sukututkimuksessa kerättävi�
 
 [Arkkitehtuurikuvaus](https://github.com/mkkarl/ot-harjoitustyo/blob/master/Sukupuusovellus/dokumentointi/arkkitehtuuri.md)
 
-[Työaikakirjanpito](https://github.com/mkkarl/ot-harjoitustyo/blob/master/Sukupuu/dokumentointi/tuntikirjanpito.md)
+[Työaikakirjanpito](https://github.com/mkkarl/ot-harjoitustyo/blob/master/Sukupuusovellus/dokumentointi/tuntikirjanpito.md)
