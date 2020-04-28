@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sukupuusovellus.dao;
+package sukupuusovellus.logic;
 
+import java.io.File;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -16,9 +17,11 @@ import static org.junit.Assert.*;
  *
  * @author mari
  */
-public class PersonDaoTest {
+public class LogicTest {
+    FileManagement fm;
+    DatabaseManagement dbm;
     
-    public PersonDaoTest() {
+    public LogicTest() {
     }
     
     @BeforeClass
@@ -31,7 +34,8 @@ public class PersonDaoTest {
     
     @Before
     public void setUp() {
-        
+        this.fm = new FileManagement();
+        this.dbm = new DatabaseManagement(fm);
     }
     
     @After
@@ -43,4 +47,20 @@ public class PersonDaoTest {
     //
     // @Test
     // public void hello() {}
+    
+    public void openFileWorks() {
+        File f = new File("./testitietokannat/testitietokanta1.db");
+        
+        fm.openFile(f);
+        
+        assertNotNull(fm.getFileName());
+    }
+    
+    public void createNewDBWorks() {
+        File f = new File("./testitietokannat/testitietokanta.db");
+        
+        fm.openFile(f);
+        
+        dbm.createNewDatabase();
+    }
 }

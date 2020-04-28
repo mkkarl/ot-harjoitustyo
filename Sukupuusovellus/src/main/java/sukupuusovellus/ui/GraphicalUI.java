@@ -37,9 +37,8 @@ public class GraphicalUI extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FileChooser fileChooser = new FileChooser();
-
-        NewFamilyTreeGUI nftgui = new NewFamilyTreeGUI();
-        OpenFamilyTreeGUI oftgui = new OpenFamilyTreeGUI();
+        
+        FamilyTreeGUI ftgui = new FamilyTreeGUI(fileManagement);
 
         BorderPane layout = new BorderPane();
 
@@ -53,9 +52,11 @@ public class GraphicalUI extends Application {
 
         Button newTree = new Button("Istuta uusi sukupuu");
         Button openTree = new Button("Avaa sukupuu");
+        Button searchTree = new Button("Tutki puuta");
 
         buttons.getChildren().add(newTree);
         buttons.getChildren().add(openTree);
+        buttons.getChildren().add(searchTree);
 
         layout.setTop(header);
         layout.setCenter(buttons);
@@ -82,6 +83,7 @@ public class GraphicalUI extends Application {
                     }
                 }
 
+                footer.setText(fileManagement.getFileName());
             }
         });
 
@@ -90,8 +92,12 @@ public class GraphicalUI extends Application {
             public void handle(final ActionEvent e) {
                 File file = fileChooser.showOpenDialog(stage);
                 fileManagement.openFile(file);
+
+                footer.setText(fileManagement.getFileName());
             }
         });
+        
+        searchTree.setOnAction((event) -> layout.setCenter(ftgui.getScene()));
 
         Scene scene = new Scene(layout, 400, 300);
 
