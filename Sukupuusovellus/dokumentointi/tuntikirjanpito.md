@@ -12,4 +12,10 @@ päivä | aika | mitä tein
 20.4. | 1 | Aineiston lueskelua, miten voisi toteuttaa uuden tietokannan luonnin
 21.4. | 3.75 | Uuden tietokannan luovan koodin kirjoittelua, sqliten lisäys pomiin, personDaon täydennystä
 21.4. | 1 | Release, Readme, tuntikirjanpito yms.
-**Yhteensä** | **23.75** |
+27.4. | 1.25 | testien kirjoittelua
+27.4. | 0.75 | gui:n koodaamista
+28.4. | 0.25 | näkymän suunnittelua
+28.4. | 1 | Sukupuu-näkymään tarvittavan koodin selvittelyä
+28.4. | 2.5 | Sukupuu-näkymän koodaamista
+28.4. | 0.5 | release, dokumentoinnin päivitystä
+**Yhteensä** | **30** |

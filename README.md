@@ -14,6 +14,8 @@ Sukupuusovelluksen avulla k채ytt채j채 voi hallita sukututkimuksessa ker채tt채vi�
 
 [Viikko 5](https://github.com/mkkarl/ot-harjoitustyo/releases/tag/viikko5)
 
+[Viikko 6](https://github.com/mkkarl/ot-harjoitustyo/releases/tag/viikko6)
+
 ## Komentorivitoiminnot
 
 ### Testaus
