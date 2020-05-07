@@ -24,7 +24,7 @@ public class PersonDao implements Dao<Person, Integer> {
 
     @Override
     public void create(Person person) throws SQLException {
-        Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath(), "sa", "");
+        Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath());
 
         PreparedStatement stmt = connection.prepareStatement("INSERT INTO Person"
                 + " (firstname, lastname, dob, dod, pob, pod)"
@@ -43,7 +43,7 @@ public class PersonDao implements Dao<Person, Integer> {
 
     @Override
     public Person read(Integer key) throws SQLException {
-        Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath(), "sa", "");
+        Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath());
 
         PreparedStatement stmt = connection.prepareStatement("SELECT * FROM Person WHERE id = ?");
         stmt.setInt(1, key);
@@ -73,7 +73,7 @@ public class PersonDao implements Dao<Person, Integer> {
 
     @Override
     public Person update(Person person) throws SQLException {
-        Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath(), "sa", "");
+        Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath());
 
         PreparedStatement stmt = connection.prepareStatement("UPDATE Person SET firstname = ?, lastname = ?,"
                 + "dob = ?, dod = ?, pob = ?, pod = ? WHERE id = ?");
@@ -94,7 +94,7 @@ public class PersonDao implements Dao<Person, Integer> {
 
     @Override
     public void delete(Integer key) throws SQLException {
-        Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath(), "sa", "");
+        Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath());
 
         PreparedStatement stmt = connection.prepareStatement("DELETE FROM Person WHERE id = ?");
 
@@ -106,14 +106,14 @@ public class PersonDao implements Dao<Person, Integer> {
 
     @Override
     public List<Person> list() throws SQLException {
-        Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath(), "sa", "");
+        Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath());
 
         PreparedStatement stmt = connection.prepareStatement("SELECT * FROM Person");
         ResultSet rs = stmt.executeQuery();
 
-        if (!rs.next()) {
-            return null;
-        }
+//        if (!rs.next()) {
+//            return null;
+//        }
 
         List<Person> persons = new ArrayList<>();
 

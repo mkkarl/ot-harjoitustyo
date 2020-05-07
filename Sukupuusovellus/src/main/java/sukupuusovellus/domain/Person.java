@@ -81,5 +81,13 @@ public class Person {
     public String getPlaceOfDeath() {
         return pod;
     }
+    
+    public String buttonText() {
+        return lastname + ", " + firstname + "\t| ";
+    }
+    
+    public String toString() {
+        return lastname + ", " + firstname;
+    }
 
 }
