@@ -7,7 +7,6 @@ package sukupuusovellus.logic;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -25,7 +24,7 @@ public class DatabaseManagement {
     }
 
     public void createNewDatabase() {
-        try ( Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath(), "sa", "")) {
+        try (Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath(), "sa", "")) {
 
             connection.prepareStatement("CREATE TABLE Person ("
                     + "id INTEGER PRIMARY KEY,"
