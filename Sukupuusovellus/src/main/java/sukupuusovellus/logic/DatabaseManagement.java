@@ -25,7 +25,7 @@ public class DatabaseManagement {
     }
 
     public void createNewDatabase() {
-        try (Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath(), "sa", "")) {
+        try ( Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath(), "sa", "")) {
 
             connection.prepareStatement("CREATE TABLE Person ("
                     + "id INTEGER PRIMARY KEY,"

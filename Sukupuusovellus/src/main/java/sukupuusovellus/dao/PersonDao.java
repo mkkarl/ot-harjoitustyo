@@ -86,6 +86,7 @@ public class PersonDao implements Dao<Person, Integer> {
         stmt.setString(6, person.getPlaceOfDeath());
         stmt.setInt(7, person.getId());
 
+        stmt.executeUpdate();
         stmt.close();
         connection.close();
 
@@ -110,10 +111,6 @@ public class PersonDao implements Dao<Person, Integer> {
 
         PreparedStatement stmt = connection.prepareStatement("SELECT * FROM Person");
         ResultSet rs = stmt.executeQuery();
-
-//        if (!rs.next()) {
-//            return null;
-//        }
 
         List<Person> persons = new ArrayList<>();
 

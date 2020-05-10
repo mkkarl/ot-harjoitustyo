@@ -33,7 +33,6 @@ public class PersonDataGUI {
     }
 
     public Parent getScene(BorderPane layoutGUI, Person person) {
-        FamilyTreeGUI ftgui = new FamilyTreeGUI(fileManagement);
 
         PersonDao dao = new PersonDao(fileManagement);
 
@@ -88,6 +87,8 @@ public class PersonDataGUI {
         });
 
         Button returnButton = new Button("Palaa puuhun");
+
+        FamilyTreeGUI ftgui = new FamilyTreeGUI(fileManagement);
 
         returnButton.setOnAction((event) -> {
             layoutGUI.setCenter(ftgui.getScene(layoutGUI));
