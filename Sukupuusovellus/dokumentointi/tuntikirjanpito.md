@@ -18,4 +18,8 @@ päivä | aika | mitä tein
 28.4. | 1 | Sukupuu-näkymään tarvittavan koodin selvittelyä
 28.4. | 2.5 | Sukupuu-näkymän koodaamista
 28.4. | 0.5 | release, dokumentoinnin päivitystä
-**Yhteensä** | **30** |
+5.5. | 4 | Epätoivoinen yritys saada henkilölistaus toimimaan
+6.5. | 4.5 | mallitietokantaa ja koodia yksinkertaistettu jotta nappi tulee näkyviin (FamilyTreeGUI)
+10.5. | 4.75 | GUI:n koodaamista
+10.5. | 1.25 | dokumentointia ja muuta viimeistelyä
+**Yhteensä** | **44.5** |

@@ -3,7 +3,7 @@
 ## Sovelluksen tarkoitus
 
 Sovelluksen avulla on tarkoitus tallentaa ja tarkastella sukututkimuksessa oleellisia tietoja henkilöistä.
-Näitä ovat ainakin nimitiedot, syntymä- ja kuolinaika ja -paikka, vanhemmat, lapset ja puolisot.
+Näitä ovat nimitiedot, syntymä- ja kuolinaika ja -paikka.
 
 ## Perusversion tarjoama toiminnallisuus
 
@@ -13,19 +13,16 @@ Sovellus toimii paikallisesti omalla koneella, joten riski väärinkäytölle ei
 Tiedot tallennetaan tietokantaan. Graafisessa käyttöliittymässä voidaan
 * luoda uusia henkilöitä
 * muokata olemassa olevien henkilöiden tietoja
-* poistaa henkilöitä
-* luoda yhteyksiä henkilöiden välille
-* tutkailla henkilöitä listamuodossa
-
-Jos tapaus ei ole liian haastava ja aikaa on, niin ohjelman voisi myös laittaa muodostaamaan sukupuun henkilöistä.
-Tämän voi jättää myös kurssin jälkeiseksi kehitystyöksi.
-
-Koska ohjelmassa käsitellään henkilötietoja, niin siihen voisi tehdä mahdollisuuden tallentaa rekisteriselosteen.
+* tutkailla henkilöitä listattuina nappeina
 
 ## Jatkokehitysideoita
 
-Jos graafisen sukupuun toteutus ei tule perusversioon, niin sen voi lisätä myöhemmin.
-Lisäksi henkilöille voi lisätä lisää tallennettavia tietoja, kuten esimerkiksi kuva ja elämäntarina.
+Koska ohjelmassa käsitellään henkilötietoja, niin siihen voisi tehdä mahdollisuuden tallentaa rekisteriselosteen.
+
+**Ohjelmaan voisi toteuttaa seuraavat ominaisuudet:**
+* Sukulaisuussuhteet
+* Graafinen sukupuu 
+* Henkilöille lisää tallennettavia tietoja, kuten esimerkiksi kuva ja elämäntarina.
 
 Sovellukseen voisi lisätä myös käyttäjätunnukset eri rooleineen (pääkäyttäjä, tavallinen käyttäjä).
 Käyttäjätunnuksia voisi hyödyntää tallennettujen tietojen lokitiedoissa.

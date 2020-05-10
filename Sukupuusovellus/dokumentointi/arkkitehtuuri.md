@@ -2,13 +2,9 @@
 
 ## Rakenne
 
-Pakkauskaavio
+Pakkauskaavio luokilla
 
-<img src="https://github.com/mkkarl/ot-harjoitustyo/blob/master/Sukupuusovellus/dokumentointi/kuvat/IMG_20200407_231212.jpg" width="300">
-
-Luokat
-
-<img src="https://github.com/mkkarl/ot-harjoitustyo/blob/master/Sukupuusovellus/dokumentointi/kuvat/IMG_20200407_231223.jpg" width="300">
+<img src="https://github.com/mkkarl/ot-harjoitustyo/blob/master/Sukupuusovellus/dokumentointi/kuvat/IMG_20200510_231948.jpg" width="300">
 
 Hahmotelmia käyttöliittymästä
 
