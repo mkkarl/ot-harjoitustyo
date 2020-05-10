@@ -2,6 +2,14 @@
 
 Sukupuusovelluksen avulla käyttäjä voi hallita sukututkimuksessa kerättäviä tietoja.
 
+## Käyttöohje
+
+Kun sovellus käyynistetään, ensin joko luodaan uusi tietokanta (tiedostopääte .db) napista 'Istuta uusi sukupuu' tai avataan olemassa oleva tietokanta napista 'Avaa sukupuu'. Seuraavaksi aloitetaan puun tutkiminen napista 'Tutki puuta'.
+
+Sukupuu-näkymässä joko avataan olemassa olevan henkilön tiedot henkilön napista tai luodaan uusi henkilö napista 'Luo uusi henkilö'.
+
+Henkilötietonäkymässä annetaan tiedetyt henkilötiedot ja ne tallennetaan painamalla nappia 'Tallenna'. Sukupuu-näkymään palataan napista 'Palaa puuhun', joka ei tallenna annettuja tietoja.
+
 ## Dokumentaatio
 
 [Vaatimusmäärittely](https://github.com/mkkarl/ot-harjoitustyo/blob/master/Sukupuusovellus/dokumentointi/vaatimusmaarittely.md)
@@ -15,6 +23,8 @@ Sukupuusovelluksen avulla käyttäjä voi hallita sukututkimuksessa kerättävi�
 [Viikko 5](https://github.com/mkkarl/ot-harjoitustyo/releases/tag/viikko5)
 
 [Viikko 6](https://github.com/mkkarl/ot-harjoitustyo/releases/tag/viikko6)
+
+[Loppupalautus](https://github.com/mkkarl/ot-harjoitustyo/releases/tag/loppupalautus)
 
 ## Komentorivitoiminnot
 
