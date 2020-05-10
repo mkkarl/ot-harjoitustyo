@@ -38,9 +38,11 @@ public class GraphicalUI extends Application {
     public void start(Stage stage) throws Exception {
         FileChooser fileChooser = new FileChooser();
         
+        BorderPane layout = new BorderPane();
+        
         FamilyTreeGUI ftgui = new FamilyTreeGUI(fileManagement);
 
-        BorderPane layout = new BorderPane();
+        
 
         Label header = new Label("Sukupuu");
         header.setPadding(new Insets(20, 20, 20, 20));
@@ -97,9 +99,9 @@ public class GraphicalUI extends Application {
             }
         });
         
-        searchTree.setOnAction((event) -> layout.setCenter(ftgui.getScene()));
+        searchTree.setOnAction((event) -> layout.setCenter(ftgui.getScene(layout)));
 
-        Scene scene = new Scene(layout, 400, 300);
+        Scene scene = new Scene(layout, 800, 600);
 
         stage.setScene(scene);
         stage.show();

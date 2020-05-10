@@ -17,6 +17,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import sukupuusovellus.dao.Dao;
 import sukupuusovellus.dao.PersonDao;
@@ -39,7 +40,9 @@ public class FamilyTreeGUI {
 //        this.persons = personDao.list();
     }
 
-    public Parent getScene() {
+    public Parent getScene(BorderPane layoutGUI) {
+        PersonDataGUI pdgui = new PersonDataGUI(fileManagement);
+        
         VBox layout = new VBox();
         Label coming = new Label("Tässä on sukupuun henkilöt");
         layout.getChildren().add(coming);
@@ -47,10 +50,8 @@ public class FamilyTreeGUI {
         VBox personButtons = new VBox();
 
         PersonDao personDao = new PersonDao(fileManagement);
-        
+
         List<Person> persons;
-        
-        
 
         try {
             persons = personDao.list();
@@ -58,18 +59,22 @@ public class FamilyTreeGUI {
             persons = new ArrayList<>();
             e.printStackTrace();
         }
-        
+
         System.out.println(persons.toString()); // testirivi
 
         Button[] buttons = new Button[persons.size()];
-        
+
         int i = 0;
-        
+
         for (Person p : persons) {
             buttons[i] = new Button(p.buttonText());
             
+            buttons[i].setOnAction((event) -> {
+                layoutGUI.setCenter(pdgui.getScene(layoutGUI, p));
+            });
+
             personButtons.getChildren().add(buttons[i]);
-            
+
             i++;
         }
 
@@ -81,8 +86,14 @@ public class FamilyTreeGUI {
 //            Person p = personDao.read(i);
 //            buttons[i - 1] = new Button(p.buttonText());
 //        }
-        
+        Button newPerson = new Button("Luo uusi henkilö");
+
+        newPerson.setOnAction((event) -> {
+            layoutGUI.setCenter(pdgui.getScene(layoutGUI, new Person()));
+        });
+
         layout.getChildren().add(personButtons);
+        layout.getChildren().add(newPerson);
 
         return layout;
 
