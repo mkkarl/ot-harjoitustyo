@@ -28,12 +28,16 @@ public class DatabaseManagement {
 
             connection.prepareStatement("CREATE TABLE Person ("
                     + "id INTEGER PRIMARY KEY,"
+                    + "parent1id INTEGER,"
+                    + "parent2id INTEGER,"
                     + "firstname VARCHAR(200),"
                     + "lastname VARCHAR(200),"
                     + "dob DATE,"
                     + "dod DATE,"
                     + "pob VARCHAR(50),"
-                    + "pod VARCHAR(50)"
+                    + "pod VARCHAR(50),"
+                    + "FOREIGN KEY (parent1id) REFERENCES Person(id),"
+                    + "FOREIGN KEY (parent2id) REFERENCES Person(id)"
                     + ");").executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(DatabaseManagement.class.getName()).log(Level.SEVERE, null, ex);

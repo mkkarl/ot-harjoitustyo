@@ -14,6 +14,8 @@ import java.sql.Date;
 public class Person {
 
     private int id;
+    private int parent1id;
+    private int parent2id;
     private String firstname;
     private String lastname;
     private Date dob;
@@ -31,6 +33,22 @@ public class Person {
 
     public Integer getId() {
         return id;
+    }
+    
+    public void setParent1Id(int parent1id) {
+        this.parent1id = parent1id;
+    }
+
+    public Integer getParent1Id() {
+        return parent1id;
+    }
+    
+    public void setParent2Id(int parent2id) {
+        this.parent2id = parent2id;
+    }
+
+    public Integer getParent2Id() {
+        return parent2id;
     }
 
     public void setFirstName(String firstname) {

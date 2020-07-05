@@ -27,14 +27,16 @@ public class PersonDao implements Dao<Person, Integer> {
         Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath());
 
         PreparedStatement stmt = connection.prepareStatement("INSERT INTO Person"
-                + " (firstname, lastname, dob, dod, pob, pod)"
-                + " VALUES (?, ?, ?, ?, ?, ?)");
+                + " (firstname, lastname, dob, dod, pob, pod, parent1id, parent2id)"
+                + " VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
         stmt.setString(1, person.getFirstName());
         stmt.setString(2, person.getLastName());
         stmt.setDate(3, person.getDateOfBirth());
         stmt.setDate(4, person.getDateOfDeath());
         stmt.setString(5, person.getPlaceOfBirth());
         stmt.setString(6, person.getPlaceOfDeath());
+        stmt.setInt(7, person.getParent1Id());
+        stmt.setInt(8, person.getParent2Id());
 
         stmt.executeUpdate();
         stmt.close();
@@ -56,6 +58,8 @@ public class PersonDao implements Dao<Person, Integer> {
         Person person = new Person();
 
         person.setId(rs.getInt("id"));
+        person.setParent1Id(rs.getInt("parent1id"));
+        person.setParent2Id(rs.getInt("parent2id"));
         person.setFirstName(rs.getString("firstname"));
         person.setLastName(rs.getString("lastname"));
         person.setDateOfBirth(rs.getDate("dob"));
@@ -76,7 +80,7 @@ public class PersonDao implements Dao<Person, Integer> {
         Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileManagement.getFilePath());
 
         PreparedStatement stmt = connection.prepareStatement("UPDATE Person SET firstname = ?, lastname = ?,"
-                + "dob = ?, dod = ?, pob = ?, pod = ? WHERE id = ?");
+                + "dob = ?, dod = ?, pob = ?, pod = ?, parent1id = ?, parent2id = ? WHERE id = ?");
 
         stmt.setString(1, person.getFirstName());
         stmt.setString(2, person.getLastName());
@@ -84,8 +88,10 @@ public class PersonDao implements Dao<Person, Integer> {
         stmt.setDate(4, person.getDateOfDeath());
         stmt.setString(5, person.getPlaceOfBirth());
         stmt.setString(6, person.getPlaceOfDeath());
-        stmt.setInt(7, person.getId());
-
+        stmt.setInt(7, person.getParent1Id());
+        stmt.setInt(8, person.getParent2Id());
+        stmt.setInt(9, person.getId());
+        
         stmt.executeUpdate();
         stmt.close();
         connection.close();
@@ -118,6 +124,8 @@ public class PersonDao implements Dao<Person, Integer> {
             Person person = new Person();
 
             person.setId(rs.getInt("id"));
+            person.setParent1Id(rs.getInt("parent1id"));
+            person.setParent2Id(rs.getInt("parent2id"));
             person.setFirstName(rs.getString("firstname"));
             person.setLastName(rs.getString("lastname"));
             person.setDateOfBirth(rs.getDate("dob"));
